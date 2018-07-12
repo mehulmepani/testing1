@@ -9,8 +9,8 @@ public class LoginPage {
     @FindBy(xpath = "/html/body/table/tbody/tr/td[1]/form/div/center/table/tbody/tr/td[1]/table/tbody/tr[3]/td[2]/p/input")
     private WebElement TestLogin;
 
-    public void login( String password){
-        LoginUsername.sendKeys(DDT.DDT_Method());
+    public void login( String username , String password){
+        LoginUsername.sendKeys(username);
         LoginPassword.sendKeys(password);
         TestLogin.click();
     }
